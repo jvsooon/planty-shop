@@ -2,6 +2,7 @@
 
 :root {
     --primary-background: #ebebea;
+    --menu-background: #bcc0b6;
     --primary-green: #4f5640;
     --primary-font: #0f170d;
 }
@@ -17,6 +18,20 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: var(--primary-font);
+    background: var(--primary-background);
+}
+
+.section-container {
+    margin: 4em 0;
+}
+
+.section__description {
+    margin: 1.5em 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
 }
 
 h1,
@@ -29,4 +44,141 @@ p {
 img {
     max-width: 100%;
     display: block;
+}
+
+.btn {
+    display:inline-block;
+    text-transform: uppercase;
+    border: none;
+    background: #ffffff;
+    font-weight: 500;
+    padding: 1em 2em;
+}
+ 
+/* Header Section */
+.section__header {
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-container {
+    width: 40%;
+}
+
+nav {
+    display: none;
+    z-index: 1;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 2em 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--pria);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-show {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--menu-background);
+    width: 60%;
+    padding: 2em 0;
+    height: 100vh;
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.12));
+}
+
+.menu-btn-close {
+    float: right;
+    margin: 0 1.5em;
+    color: var(--primary-background);
+}
+
+.header-right-icons {
+    display: none;
+}
+
+/* Hero Section */
+.hero-container {
+    position:relative;
+}
+
+.hero-container img {
+    width: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 2em;
+}
+
+.hero__subtitle {
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+/* New Arrivals Section */
+.section__title {
+    color: var(--primary-green);
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.section__description {
+    text-align: center;
+}
+
+.arrival-container {
+    width: 21em;
+}
+
+.arrival-container img {
+    padding: .6em;
+    height: 21em;
+}
+
+.arrival__title, .arrival__price {
+    margin: .6em;
+}
+
+.arrival__price {
+    font-weight: bold;
+}
+
+/* Category Section */
+.category-container {
+    width: 21em;
+    /* background: pink; */
+    
+}
+
+.category-container img {  
+    margin: 0 auto;
+    padding: .6em;
+    height: 21em;
+    width: 21em;
+    position: relative;
+}
+
+.category__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1.5em 2em;
+    text-transform: uppercase;
+    color: var(--primary-green);
+    font-weight: 500;
+    z-index: 2;
 }

@@ -7,8 +7,184 @@
         <title>Planty Shop</title>
 
         <link rel="stylesheet" href="main.css" />
+
+        <script src="script.js" defer></script>
+
+        <!-- Import JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Import Flickity CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        />
+
+        <!-- Import Flickity JavaScript -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
     <body>
-        
+        <header>
+            <div class="section__header container">
+                <div class="logo-container">
+                    <img src="./imgs/logo.png" alt="Planty text logo" />
+                </div>
+                <div class="menu-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="-5 -7 24 24"
+                        width="30"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2zm7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2zM1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"
+                        ></path>
+                    </svg>
+                </div>
+                <nav class="nav__menu">
+                    <div class="menu-btn-close">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="-6 -6 24 24"
+                            width="30"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485 2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535 3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <ul>
+                        <li><a href="#0">home</a></li>
+                        <li><a href="#0">shop</a></li>
+                        <li><a href="#0">services</a></li>
+                        <li><a href="#0">gallery</a></li>
+                        <li><a href="#0">blog</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right-icons">
+                    <div class="search-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="-2.5 -2.5 24 24"
+                            width="30"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <div class="bag-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="-5 -2 24 24"
+                            width="30"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M2 8v9a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8H2zm0-2V3a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v3h2v11a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V6h2zm2 0h6V3a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v3z"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section>
+            <div class="hero-container">
+                <img
+                    src="./imgs/hero.png"
+                    alt="Top down view of plants on a surface"
+                />
+                <div class="hero-content">
+                    <h1 class="section__title">make your life green</h1>
+                    <p class="hero__subtitle">Get discounts all types plants</p>
+                    <button class="btn">shop now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <!-- <section class="section-container">
+            <h1 class="section__title">new arrivals</h1>
+            <p class="section__description">There are many variations</p>
+            <div class="carousel">
+                <div class="carousel-cell">
+                    <div class="arrival-container">
+                        <img
+                            src="./imgs/arrivals/arrival-1.jpg"
+                            alt="Golden Barrel Cactus"
+                        />
+                        <div class="arrival__title">Golden Barrel Cactus</div>
+                        <div class="arrival__price">$30</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="arrival-container">
+                        <img
+                            src="./imgs/arrivals/arrival-2.jpg"
+                            alt="Backebergiana ernestii"
+                        />
+                        <div class="arrival__title">Backebergiana ernestii</div>
+                        <div class="arrival__price">$35</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="arrival-container">
+                        <img
+                            src="./imgs/arrivals/arrival-3.jpg"
+                            alt="Mammillaria fraileana"
+                        />
+                        <div class="arrival__title">Mammillaria fraileana</div>
+                        <div class="arrival__price">$20</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="arrival-container">
+                        <img
+                            src="./imgs/arrivals/arrival-4.jpg"
+                            alt="Blue Barrel Cactus"
+                        />
+                        <div class="arrival__title">Blue Barrel Cactus</div>
+                        <div class="arrival__price">$13</div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Category Section -->
+        <section class="section-container">
+            <h1 class="section__title">shop by categories</h1>
+            <div class="carousel">
+                <div class="carousel-cell">
+                    <div class="category-container">
+                        <img
+                            src="./imgs/categories/office.jpg"
+                            alt="Golden Barrel Cactus"
+                        />
+                        <div class="category__title">office plants</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="category-container">
+                        <img
+                            src="./imgs/categories/house.jpg"
+                            alt="Backebergiana ernestii"
+                        />
+                        <div class="category__title">house plants</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="category-container">
+                        <img
+                            src="./imgs/categories/cactus.jpg"
+                            alt="Mammillaria fraileana"
+                        />
+                        <div class="category__title">cactus plants</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
