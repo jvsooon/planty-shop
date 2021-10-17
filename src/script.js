@@ -12,5 +12,5 @@ menuCloseBtn.addEventListener('click', () => {
 })
 
 $('.carousel').flickity({
-    cellAlign: 'center'
+    initialIndex: 1
 });

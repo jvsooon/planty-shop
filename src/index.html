@@ -24,7 +24,7 @@
     </head>
     <body>
         <header>
-            <div class="section__header container">
+            <div class="section__header">
                 <div class="logo-container">
                     <img src="./imgs/logo.png" alt="Planty text logo" />
                 </div>
@@ -106,7 +106,7 @@
         </section>
 
         <!-- New Arrivals Section -->
-        <section class="section-container">
+        <section class="section-container container">
             <h1 class="section__title">new arrivals</h1>
             <p class="section__description">There are many variations</p>
             <div class="carousel">
@@ -154,7 +154,7 @@
         </section>
 
         <!-- Category Section -->
-        <section class="section-container">
+        <section class="section-container container">
             <h1 class="section__title">shop by categories</h1>
             <div class="carousel">
                 <div class="carousel-cell">
@@ -187,18 +187,8 @@
             </div>
         </section>
 
-        <!-- Banner Section -->
-        <!-- <section>
-            <div class="hero-container">
-                <img
-                    src="./imgs/section-bg.jpg"
-                    alt=""
-                />
-            </div>
-        </section> -->
-
         <!-- Experience Section -->
-        <section class="section-container">
+        <section class="section-container container">
             <h1 class="section__title">your experience with planty</h1>
             <div class="grid-container">
                 <div class="grid__cell-container">
@@ -214,15 +204,17 @@
                                 sooner - choose urgent delivery "for tomorrow",
                                 or use the option of self-pickup.
                             </p>
-                            <button class="btn experience-btn">more</button>
+                            <button class="btn experience-btn btn-right">
+                                more
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="grid__cell-container">
-                    <div class="grid-cell">
+                    <div class="grid-cell cell-right">
                         <img src="./imgs/experiences/convenient-1.jpg" alt="" />
                     </div>
-                    <div class="grid-cell">
+                    <div class="grid-cell cell-left">
                         <div class="experience-content">
                             <h3 class="experience-title">Convenient Choice</h3>
                             <p class="experience-description">
@@ -253,16 +245,18 @@
                                 and deliver plants in a concentrated manner,
                                 only two days a week.
                             </p>
-                            <button class="btn experience-btn">more</button>
+                            <button class="btn experience-btn btn-right">
+                                more
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <div class="divider"></div>
         <!-- Footer -->
-        <footer>
-            <div class="divider"></div>
+        <footer class="container">
             <div class="social-links">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
